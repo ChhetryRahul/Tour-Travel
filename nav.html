@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+ <html>
+ <head> 	
+ 	<title>Responsive Navigation</title>
+ 	<meta name="viewport" content="width=device-width,initial-scale=1">
+ 	<link rel="stylesheet" href="nav.css">
+ 	<link rel="icon" href="favicon.ico">
+ </head>
+ <body>
+ 
+	 <header class="header">
+	 	<div class="container">
+
+	 		<div class="logo">Travel with Rahul
+
+ 				<img class="ham" onclick="showNav()" src="https://cdn2.iconfinder.com/data/icons/leto-most-searched-mix-3/64/__menu_hamburger-18-128.png">	
+
+	 		</div>
+
+	 		<nav class="navigation" id="nav">
+	 			<ul class="nav-bar">
+	 				<li class="nav-link"> Home     </li>
+	 				<li class="nav-link"> SignUp   </li>
+	 				<li class="nav-link"> Places   </li>
+	 				<li class="nav-link"> About    </li>
+	 				<li class="nav-link"> Feedback </li>
+	 			</ul>
+	 		</nav>
+
+	 	</div>
+	 </header>
+
+	 <section class="banner"> 
+	 	<div class="banner-desc">
+	 		The Heaven on Earth
+	 		Iceland
+	 		<p>
+	 			<button class="btn">Book Tickets</button>
+	 		</p>
+	 	</div>
+	 </section>
+
+	 <section class="places">
+	 	<div class="places-cont">
+	 		<h1 class="title">Places to Visit</h1>
+	 		<div class="places-parent">
+
+	 			<div class="place place1">
+	 				<div class="place-desc">
+	 					<div class="padd">
+	 						<h1 class="place-title">Mountain</h1>
+	 						<button class="places-btn">View More</button>	
+
+	 						<p class="places-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 					
+	 					</div>	 					
+	 				</div>
+	 			</div>
+
+		 			<div class="place place2">
+	 					<div class="place-desc">
+	 						<div class="padd">
+	 							<h1 class="place-title">Beach</h1>
+	 							<button class="places-btn">View More</button>
+
+			 						<p class="places-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>			
+	 						</div>	 					
+	 					</div>
+	 				</div>
+
+		 				<div class="place place3">
+		 					<div class="place-desc">
+		 						<div class="padd">
+		 							<h1 class="place-title">Island</h1>
+		 							<button class="places-btn">View More</button>	
+
+		 							<p class="places-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		 							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		 							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		 							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 			
+		 						</div>	 					
+		 					</div>
+		 				</div>
+
+			 				<div class="place place4">
+			 					<div class="place-desc">
+			 						<div class="padd">
+			 							<h1 class="place-title">Aurora</h1>
+			 							<button class="places-btn">View More</button>
+
+			 							<p class="places-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		 								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
+			 						</div>	 					
+			 					</div>
+			 				</div>	
+
+			 				<div class="place place5">
+			 					<div class="place-desc">
+			 						<div class="padd">
+			 							<h1 class="place-title">Ocean Valley</h1>
+			 							<button class="places-btn">View More</button>
+
+			 							<p class="places-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		 								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  		
+			 						</div>	 					
+			 					</div>
+			 				</div>					
+
+	 		</div>
+	 	</div>
+	 </section>
+
+	 <script>
+
+	 	let isNavVisible=false;
+
+	 	function showNav(){
+	 		if(isNavVisible===false)
+ 			{
+ 				document.getElementById('nav').style.height="250px";
+ 				isNavVisible=true;
+ 			}
+ 			else{
+ 				document.getElementById('nav').style.height="0px";
+ 				isNavVisible=false;
+ 			}
+	 	}
+
+	 </script>
+
+ </body>
+ </html>
